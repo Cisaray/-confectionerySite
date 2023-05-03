@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        @apply font-ysabeau bg-[linear-gradient(90deg,rgba(255,97,85,1)_0%,rgba(255,43,28,1)_100%);]
+    }
+}
