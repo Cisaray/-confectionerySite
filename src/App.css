@@ -681,6 +681,42 @@ body {
   max-width: 100%;
 }
 
+.max-w-\[512px\] {
+  max-width: 512px;
+}
+
+.max-w-\[100px\] {
+  max-width: 100px;
+}
+
+.max-w-\[10000px\] {
+  max-width: 10000px;
+}
+
+.max-w-\[10px\] {
+  max-width: 10px;
+}
+
+.max-w-\[50px\] {
+  max-width: 50px;
+}
+
+.max-w-\[40px\] {
+  max-width: 40px;
+}
+
+.max-w-\[30px\] {
+  max-width: 30px;
+}
+
+.max-w-\[35px\] {
+  max-width: 35px;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -715,6 +751,10 @@ body {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .rounded-\[20px\] {
@@ -806,6 +846,16 @@ body {
   padding-bottom: 40px;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -848,6 +898,10 @@ body {
 
 .text-\[42px\] {
   font-size: 42px;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
 }
 
 .font-bold {
