@@ -96,7 +96,8 @@ function App() {
                             <div className='mt-[75px] grid grid-cols-4 items-center justify-center'>
                                 <div>
                                     <div>
-                                        <img className='max-w-[120px] mx-auto rounded-[50%]' src="/assets/worker1.jpg" alt="worker1"/>
+                                        <img className='max-w-[120px] mx-auto rounded-[50%]' src="/assets/worker1.jpg"
+                                             alt="worker1"/>
                                     </div>
                                     <div className='text-center  mt-[34px]'>
                                         <span className='font-bold text-[24px]'>Иван Иванов</span>
@@ -110,7 +111,8 @@ function App() {
                                 </div>
                                 <div>
                                     <div>
-                                        <img className='max-w-[120px] mx-auto rounded-[50%]' src="/assets/worker2.jpg" alt="worker2"/>
+                                        <img className='max-w-[120px] mx-auto rounded-[50%]' src="/assets/worker2.jpg"
+                                             alt="worker2"/>
                                     </div>
                                     <div className='text-center  mt-[34px]'>
                                         <span className='font-bold text-[24px]'>Люда Иванова</span>
@@ -124,7 +126,8 @@ function App() {
                                 </div>
                                 <div>
                                     <div>
-                                        <img className='max-w-[120px] mx-auto rounded-[50%]' src="/assets/worker3.jpg" alt="worker1"/>
+                                        <img className='max-w-[120px] mx-auto rounded-[50%]' src="/assets/worker3.jpg"
+                                             alt="worker1"/>
                                     </div>
                                     <div className='text-center  mt-[34px]'>
                                         <span className='font-bold text-[24px]'>Иван Иванов</span>
@@ -138,7 +141,8 @@ function App() {
                                 </div>
                                 <div>
                                     <div>
-                                        <img className='max-w-[120px] mx-auto rounded-[50%]' src="/assets/worker4.jpg" alt="worker1"/>
+                                        <img className='max-w-[120px] mx-auto rounded-[50%]' src="/assets/worker4.jpg"
+                                             alt="worker1"/>
                                     </div>
                                     <div className='text-center  mt-[34px]'>
                                         <span className='font-bold text-[24px]'>Иван Иванов</span>
@@ -195,9 +199,75 @@ function App() {
                                 </div>
                             </div>
                             <div className='text-center mt-[60px]'>
-                                <a className='px-[36px] py-[12px] border-2 rounded-xl italic border-[graytext] hover:text-white hover:bg-[rgba(255,97,85,1)] transition-colors' href="#">Каталог продуктов</a>
+                                <a className='px-[36px] py-[12px] border-2 rounded-xl italic border-[graytext] hover:text-white hover:bg-[rgba(255,97,85,1)] transition-colors'
+                                   href="#">Каталог продуктов</a>
                             </div>
 
+                        </div>
+                    </section>
+                    {/*Section 5*/}
+                    <section className='bg-thirdBack bg-cover gb-center px-5 pb-10'>
+                        <div className='max-w-[1070px] mx-auto'>
+                            <div className='text-center pt-[100px] max-w-[570px] mx-auto'>
+                                <h2 className='italic font-semibold text-graytext text-[40px]'>ОТЗЫВЫ О НАС</h2>
+                                <p className='text-graytext mt-6 text-[18px] italic'>Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. Architecto aut autem cum eum excepturi id illum ipsa
+                                    odio tempora voluptates.</p>
+                            </div>
+                            <div className='grid grid-cols-2 items-center gap-10 mt-[50px]'>
+                                <div className='flex'>
+                                    <div className='pr-[15px]'>
+                                        <img className='rounded-[50%] max-w-full w-full h-auto' src="/assets/review1.jpg" alt="review"/>
+                                    </div>
+                                    <div className='flex flex-col justify-center'>
+                                        <p className='text-graytext italic'>“Nullam dapibus blandit orci,
+                                            viverra gravida dui lobortis eget. Maecenas
+                                            fringilla urna eu nisl scelerisque.”
+                                        </p>
+                                        <p className='mt-5 text-graytext font-semibold text-[24px]'>Chanel Iman</p>
+                                        <p className='text-graytext'>CEO Pinterest</p>
+                                    </div>
+                                </div>
+                                <div className='flex'>
+                                    <div className='pr-[15px]'>
+                                        <img className='rounded-[50%] max-w-full w-full h-auto' src="/assets/review2.jpg" alt="review"/>
+                                    </div>
+                                    <div className='flex flex-col justify-center'>
+                                        <p className='text-graytext italic'>“Vivamus luctus urna sed urna ultricies
+                                            ac tempor dui sagittis. In condimentum
+                                            facilisis porta.”
+                                        </p>
+                                        <p className='mt-5 text-graytext font-semibold text-[24px]'>ADRIANA LIMA</p>
+                                        <p className='text-graytext'>Founder of Instagram</p>
+                                    </div>
+                                </div>
+                                <div className='flex'>
+                                    <div className='pr-[15px]'>
+                                        <img className='rounded-[50%] max-w-full w-full h-auto' src="/assets/review3.jpg" alt="review"/>
+                                    </div>
+                                    <div className='flex flex-col justify-center'>
+                                        <p className='text-graytext italic'>“Vivamus luctus urna sed urna ultricies
+                                            ac tempor dui sagittis. In condimentum
+                                            facilisis porta.”
+                                        </p>
+                                        <p className='mt-5 text-graytext font-semibold text-[24px]'>ANNE HATHAWAY</p>
+                                        <p className='text-graytext'>Lead Designer at Behance</p>
+                                    </div>
+                                </div>
+                                <div className='flex'>
+                                    <div className='pr-[15px]'>
+                                        <img className='rounded-[50%] max-w-full w-full h-auto' src="/assets/review4.jpg" alt="review"/>
+                                    </div>
+                                    <div className='flex flex-col justify-center'>
+                                        <p className='text-graytext italic'>“Phasellus non purus vel arcu tempor
+                                            commodo. Fusce semper, purus vel luctus
+                                            molestie, risus sem cursus neque.”
+                                        </p>
+                                        <p className='mt-5 text-graytext font-semibold text-[24px]'>EMMA STONE</p>
+                                        <p className='text-graytext'>Co-Founder of Shazam</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </section>
 

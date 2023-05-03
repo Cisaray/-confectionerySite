@@ -613,20 +613,16 @@ body {
   margin-top: 34px;
 }
 
-.mt-\[75px\] {
-  margin-top: 75px;
-}
-
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
+.mt-\[50px\] {
+  margin-top: 50px;
 }
 
 .mt-\[60px\] {
   margin-top: 60px;
+}
+
+.mt-\[75px\] {
+  margin-top: 75px;
 }
 
 .block {
@@ -649,12 +645,16 @@ body {
   width: 100%;
 }
 
-.w-\[200px\] {
-  width: 200px;
-}
-
 .max-w-\[1040px\] {
   max-width: 1040px;
+}
+
+.max-w-\[1070px\] {
+  max-width: 1070px;
+}
+
+.max-w-\[1100px\] {
+  max-width: 1100px;
 }
 
 .max-w-\[1200px\] {
@@ -665,6 +665,10 @@ body {
   max-width: 120px;
 }
 
+.max-w-\[200px\] {
+  max-width: 200px;
+}
+
 .max-w-\[570px\] {
   max-width: 570px;
 }
@@ -673,24 +677,20 @@ body {
   max-width: 908px;
 }
 
-.max-w-\[1100px\] {
-  max-width: 1100px;
+.max-w-full {
+  max-width: 100%;
 }
 
-.max-w-\[150px\] {
-  max-width: 150px;
-}
-
-.max-w-\[200px\] {
-  max-width: 200px;
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -717,28 +717,8 @@ body {
   gap: 0.75rem;
 }
 
-.gap-\[40px\] {
-  gap: 40px;
-}
-
-.gap-\[50px\] {
-  gap: 50px;
-}
-
-.gap-\[70px\] {
-  gap: 70px;
-}
-
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .rounded-\[20px\] {
   border-radius: 20px;
-}
-
-.rounded-xl {
-  border-radius: 0.75rem;
 }
 
 .rounded-\[40px\] {
@@ -749,16 +729,16 @@ body {
   border-radius: 50%;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
 
 .border-\[graytext\] {
   border-color: graytext;
-}
-
-.border-graytext {
-  border-color: ##3f3a47;
 }
 
 .bg-\[\#f0e9e9\] {
@@ -771,16 +751,12 @@ body {
   background-color: rgb(255 251 235 / var(--tw-bg-opacity));
 }
 
-.bg-\[\] {
-  background-color: ;
-}
-
 .bg-firstBack {
   background-image: url(../public/assets/bg1.JPG);
 }
 
-.bg-secondBack {
-  background-image: url(../public/assets/bg2.JPG);
+.bg-thirdBack {
+  background-image: url(../public/assets/bg3.JPG);
 }
 
 .bg-cover {
@@ -815,6 +791,11 @@ body {
   padding-right: 30px;
 }
 
+.px-\[36px\] {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
 .py-\[12px\] {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -825,17 +806,16 @@ body {
   padding-bottom: 40px;
 }
 
-.px-\[36px\] {
-  padding-left: 36px;
-  padding-right: 36px;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
 
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+
+.pr-\[15px\] {
+  padding-right: 15px;
 }
 
 .pt-\[100px\] {

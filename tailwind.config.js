@@ -14,7 +14,8 @@ module.exports = {
       },
       backgroundImage:{
         "firstBack": "url(../public/assets/bg1.JPG)",
-        "secondBack": "url(../public/assets/bg2.JPG)"
+        "secondBack": "url(../public/assets/bg2.JPG)",
+        "thirdBack": "url(../public/assets/bg3.JPG)"
       },
       colors: {
         graytext: '##3f3a47'
