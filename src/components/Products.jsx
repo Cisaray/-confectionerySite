@@ -21,7 +21,7 @@ export const Product = () => {
     const updateSearchValue = React.useCallback(
         debounce((str) => {
             setSearchValue(str)
-        }, 400), [])
+        }, 600), [])
 
     const onChangeInput = (event) => {
         setValue(event.target.value)
@@ -29,7 +29,6 @@ export const Product = () => {
     }
 
     const ref = React.useRef()
-
 
     const skeletons = [...new Array(4)].map((_, index) => <Skelet key={index}/>)
 
@@ -59,8 +58,8 @@ export const Product = () => {
                 <div className='max-w-[1080px] border-2 border-[graytext] rounded-xl m-2'>
                     <div className='relative mt-2 max-w-[300px] mx-auto'>
                         <input ref={ref} onChange={(event) => onChangeInput(event)}
-                               className='w-full py-[12px] px-2 bg-[#f0e3d8] rounded-xl focus:outline-[graytext]'
-                               value={value} type="text" placeholder='Искать...'/>
+                               className='w-full py-[12px] px-2 bg-[#f0e3d8] rounded-xl focus:outline-[graytext] mt-5'
+                               value={value} type="text" placeholder='Искать по названию...'/>
                         {searchValue && <svg onClick={onClear}
                                              className='max-w-[20px] absolute right-[10px] top-[15px] cursor-pointer'
                                              xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +81,7 @@ export const Product = () => {
                     <div>
                         <h3 className='text-graytext text-[42px] italic px-5'>Каталог</h3>
                     </div>
-                    <div className='grid grid-cols-4 items-center p-5 mt-5 gap-4'>
+                    <div className='grid grid-cols-4 items-center p-5 mt-5 gap-4 lg:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1'>
                         {isLoading ? skeletons : products.map((item, idx) =>
                             <Dessert
                                 key={idx}

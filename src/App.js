@@ -18,21 +18,21 @@ function App() {
 
     return (
         <div>
-            <div className='max-w-[1200px] mx-auto bg-amber-50 bg-[#f0e9e9]'>
+            <div className='max-w-[1200px] w-full mx-auto bg-amber-50 bg-[#f0e9e9]'>
                 <Header handleClickReview={handleClickReview} handleClickFooter={handleClickFooter}/>
                 <Routes>
                     <Route path='/' exact element={<Home  review={review}/>}/>
                     <Route path='/products' exact element={<Product/>}/>
                 </Routes>
-                <footer ref={contacts} className='px-5 py-10'>
-                    <div className='flex items-center justify-between'>
-                        <div className='flex items-center gap-3'>
-                            <img className='max-w-[40px] w-full h-auto' src="/assets/logo.svg" alt="logo"/>
+                <footer ref={contacts} className='px-5 py-10 max-w-[1100px] mx-auto'>
+                    <div className='flex items-center justify-between xs:flex-col xs:gap-3 xs:justify-center'>
+                        <div className='flex items-center gap-3 xs:justify-center'>
+                            <img className='max-w-[15%] w-full h-auto' src="/assets/logo.svg" alt="logo"/>
                             <span className='text-graytext text-[20px] italic'>Чудо-Печь 2023</span>
                         </div>
-                        <div className='flex items-center justify-center gap-2'>
-                            <div>
-                                <svg viewBox="0 0 1024 1024" fill="#000000" className="max-w-[40px] w-full h-auto" version="1.1"
+                        <div className='flex gap-2 justify-end items-center xs:justify-center'>
+                            <div className='max-w-[10%]'>
+                                <svg viewBox="0 0 1024 1024" fill="#000000" className="max-w-full w-full h-auto" version="1.1"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -44,7 +44,7 @@ function App() {
                                 </svg>
                             </div>
                             <div>
-                                <a href="tel:+79999999999">+7 999 999-99-99</a>
+                                <a className='text-[25px]' href="tel:+79999999999">+7 999 999-99-99</a>
                             </div>
                         </div>
                     </div>

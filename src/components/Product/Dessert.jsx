@@ -8,10 +8,10 @@ export const Dessert = ({title, description, compound, image}) => {
                 <img className='rounded-xl' src={image} alt="img"/>
                 <p className='font-semibold text-[20px] mt-4 px-2'>{title}</p>
                 <p className='text-[16px] text-justify px-2'>{description}</p>
-                <div className='mx-auto mt-5 pb-5'>
+                <div className='mx-auto pt-[40px] my-auto pb-3'>
                     <button
                         onClick={() => setShow(true)}
-                        className=' px-[30px] py-[8px] border-2 border-[graytext] rounded-xl hover:bg-[rgba(255,97,85,1)] hover:text-amber-50 transition-colors'>Узнать
+                        className='px-[30px] py-[8px] border-2 border-[graytext] rounded-xl hover:bg-[rgba(255,97,85,1)] hover:text-amber-50 transition-colors'>Узнать
                         больше
                     </button>
                 </div>

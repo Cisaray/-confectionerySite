@@ -5,10 +5,10 @@ import React from "react";
 
 export const Header = ({handleClickFooter, handleClickReview}) =>{
     return(
-        <header className='flex justify-between mt-5 py-[40px] px-[200px] items-center sm:flex-col'>
+        <header className='flex justify-between mt-5 border-2 py-[40px] px-[80px] items-center sm:flex-col xs:px-[10px] xs:justify-center'>
             <Link to='/'>
-                <div>
-                    <img className='max-w-[120px] w-full h-auto' src="/assets/logo.svg" alt="logo"/>
+                <div className='max-w-[50%] xs:max-w-[25%] flex justify-start '>
+                    <img className='max-w-full w-full h-auto mx-auto' src="/assets/logo.svg" alt="logo"/>
                 </div>
             </Link>
             <div>
