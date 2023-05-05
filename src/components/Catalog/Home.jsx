@@ -18,9 +18,9 @@ export const Home = ({review}) => {
                             and businesses from all over the globe
                             to create awesome websites and applications.</p>
                     </div>
-                    <div className="flex px-[195px] items-center mt-10 gap-10 md:flex-col">
+                    <div className="grid grid-cols-3 px-[195px] items-center mt-10 gap-10 md:grid-cols-1">
                         <div
-                            className='flex flex-col items-center backdrop-blur p-5 rounded-[20px]'>
+                            className='flex flex-col items-center backdrop-blur p-5 rounded-[20px] h-[100%]'>
                             <div>
                                 <img className='max-w-[110px] w-full h-auto' src="/assets/icon1.svg" alt="icon1"/>
                             </div>
@@ -32,7 +32,7 @@ export const Home = ({review}) => {
                             </div>
                         </div>
                         <div
-                            className='flex flex-col items-center backdrop-blur p-5 rounded-[20px]'>
+                            className='flex flex-col items-center backdrop-blur p-5 rounded-[20px] h-[100%]'>
                             <div>
                                 <img className='max-w-[120px] w-full h-auto' src="/assets/icon2.svg" alt="icon1"/>
                             </div>
@@ -44,7 +44,7 @@ export const Home = ({review}) => {
                             </div>
                         </div>
                         <div
-                            className='flex flex-col items-center backdrop-blur p-5 rounded-[20px]'>
+                            className='flex flex-col items-center backdrop-blur p-5 rounded-[20px] h-[100%]'>
                             <div>
                                 <img className='max-w-[120px] w-full h-auto' src="/assets/icon3.svg" alt="icon1"/>
                             </div>
