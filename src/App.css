@@ -597,6 +597,10 @@ body {
   margin-top: 0.5rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -653,6 +657,14 @@ body {
   max-width: 1070px;
 }
 
+.max-w-\[1080px\] {
+  max-width: 1080px;
+}
+
+.max-w-\[1095px\] {
+  max-width: 1095px;
+}
+
 .max-w-\[1100px\] {
   max-width: 1100px;
 }
@@ -669,6 +681,14 @@ body {
   max-width: 200px;
 }
 
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
+.max-w-\[50px\] {
+  max-width: 50px;
+}
+
 .max-w-\[570px\] {
   max-width: 570px;
 }
@@ -681,40 +701,8 @@ body {
   max-width: 100%;
 }
 
-.max-w-\[512px\] {
-  max-width: 512px;
-}
-
-.max-w-\[100px\] {
-  max-width: 100px;
-}
-
-.max-w-\[10000px\] {
-  max-width: 10000px;
-}
-
-.max-w-\[10px\] {
-  max-width: 10px;
-}
-
-.max-w-\[50px\] {
-  max-width: 50px;
-}
-
-.max-w-\[40px\] {
-  max-width: 40px;
-}
-
-.max-w-\[30px\] {
-  max-width: 30px;
-}
-
-.max-w-\[35px\] {
-  max-width: 35px;
-}
-
-.shrink-0 {
-  flex-shrink: 0;
+.max-w-\[110px\] {
+  max-width: 110px;
 }
 
 .grid-cols-2 {
@@ -749,12 +737,16 @@ body {
   gap: 2.5rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
+.gap-4 {
+  gap: 1rem;
 }
 
 .rounded-\[20px\] {
@@ -779,6 +771,11 @@ body {
 
 .border-\[graytext\] {
   border-color: graytext;
+}
+
+.bg-\[\#f0e3d8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 227 216 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#f0e9e9\] {
@@ -807,8 +804,17 @@ body {
   background-position: center;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-5 {
   padding: 1.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-5 {
@@ -836,6 +842,11 @@ body {
   padding-right: 36px;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-\[12px\] {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -846,14 +857,9 @@ body {
   padding-bottom: 40px;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.py-\[8px\] {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .pb-10 {
@@ -874,6 +880,14 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
 }
 
 .text-\[16px\] {
@@ -898,10 +912,6 @@ body {
 
 .text-\[42px\] {
   font-size: 42px;
-}
-
-.text-\[12px\] {
-  font-size: 12px;
 }
 
 .font-bold {
@@ -1006,6 +1016,11 @@ body {
   color: rgb(118 112 128 / var(--tw-text-opacity));
 }
 
+.hover\:text-amber-50:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 251 235 / var(--tw-text-opacity));
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1017,6 +1032,10 @@ body {
   --tw-scale-y: 1;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.focus\:outline-\[graytext\]:focus {
+  outline-color: graytext;
 }
 
 @media (max-width: 991.99px) {
