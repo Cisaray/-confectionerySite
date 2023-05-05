@@ -1,62 +1,38 @@
 import './App.css';
-import {Product} from "./Catalog/Products";
-import {Home} from "./Catalog/Home";
-import {Link, Route, Routes} from "react-router-dom";
+import {Product} from "./components/Products";
+import {Home} from "./components/Catalog/Home";
+import {Route, Routes} from "react-router-dom";
 import React from "react";
+import {Header} from "./components/Header";
 
 function App() {
-    const review = React.useRef('')
-    const footer = React.useRef('')
+    const review = React.useRef(null)
+    const contacts = React.useRef(null)
 
     const handleClickReview = () =>{
         review.current?.scrollIntoView({behavior:'smooth'})
     }
     const handleClickFooter = () =>{
-        footer.current?.scrollIntoView({behavior:'smooth'})
+        contacts.current?.scrollIntoView({behavior:'smooth'})
     }
 
     return (
         <div>
             <div className='max-w-[1200px] mx-auto bg-amber-50 bg-[#f0e9e9]'>
-                <header className='flex justify-between mt-5 py-[40px] px-[200px] items-center sm:flex-col'>
-                    <Link to='/'>
-                        <div>
-                            <img src="" alt="logo"/>
-                        </div>
-                    </Link>
-                    <div>
-                        <ul className='flex gap-3 items-center sm:pt-3 xs:flex-col'>
-                            <Link to='/'>
-                                <li><a
-                                    className='text-[##3f3a47] text-[16px] italic hover:text-[#767080] transition-colors relative after:absolute after:h-[1px] after:w-full after:left-0 after:-bottom-1 after:bg-[graytext] after:scale-0 hover:after:scale-100 after:transition-transform'
-                                    href="#">HOME</a></li>
-                            </Link>
-                            <Link to='/products'>
-                                <li><a
-                                    className='text-[##3f3a47] text-[16px] italic hover:text-[#767080] transition-colors relative after:absolute after:h-[1px] after:w-full after:left-0 after:-bottom-1 after:bg-[graytext] after:scale-0 hover:after:scale-100 after:transition-transform'
-                                    href="#">PRODUCTS</a></li>
-                            </Link>
-                            <li><button
-                                className='text-[##3f3a47] text-[16px] italic hover:text-[#767080] transition-colors relative after:absolute after:h-[1px] after:w-full after:left-0 after:-bottom-1 after:bg-[graytext] after:scale-0 hover:after:scale-100 after:transition-transform'
-                                onClick={handleClickReview} >REVIEWS</button></li>
-                            <li><button
-                                className='text-[##3f3a47] text-[16px] italic hover:text-[#767080] transition-colors relative after:absolute after:h-[1px] after:w-full after:left-0 after:-bottom-1 after:bg-[graytext] after:scale-0 hover:after:scale-100 after:transition-transform'
-                                onClick={handleClickFooter}>CONTACTS</button></li>
-                        </ul>
-                    </div>
-                </header>
+                <Header handleClickReview={handleClickReview} handleClickFooter={handleClickFooter}/>
                 <Routes>
                     <Route path='/' exact element={<Home  review={review}/>}/>
                     <Route path='/products' exact element={<Product/>}/>
                 </Routes>
-                <footer ref={footer} className='px-5 py-10'>
+                <footer ref={contacts} className='px-5 py-10'>
                     <div className='flex items-center justify-between'>
-                        <div>
+                        <div className='flex items-center gap-3'>
+                            <img className='max-w-[40px] w-full h-auto' src="/assets/logo.svg" alt="logo"/>
                             <span className='text-graytext text-[20px] italic'>Чудо-Печь 2023</span>
                         </div>
-                        <div className='flex items-center gap-2'>
-                            <div className='max-w-[50px] mx-auto'>
-                                <svg viewBox="0 0 1024 1024" fill="#000000" className="icon " version="1.1"
+                        <div className='flex items-center justify-center gap-2'>
+                            <div>
+                                <svg viewBox="0 0 1024 1024" fill="#000000" className="max-w-[40px] w-full h-auto" version="1.1"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -73,8 +49,6 @@ function App() {
                         </div>
                     </div>
                 </footer>
-                {/*    Products*/}
-
             </div>
         </div>
     );

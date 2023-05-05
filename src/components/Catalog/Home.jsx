@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-export const Home = ({review, handleClickReview}) => {
+export const Home = ({review}) => {
     return (
         <>
             <main>
@@ -9,10 +9,6 @@ export const Home = ({review, handleClickReview}) => {
                     <p className='text-graytext font-medium italic text-[42px] sm:text-[35px]'>Hi there! We are the
                         new kids on the block
                         and we build awesome websites and mobile apps.</p>
-                    <button
-                        className='px-[30px] py-[12px] border-2 border-[graytext] mt-4 rounded-xl hover:text-white hover:bg-[rgba(255,97,85,1)] transition-colors'>WORK
-                        WITH US!
-                    </button>
                 </section>
                 {/*Section 2*/}
                 <section className='bg-firstBack bg-cover bg-center px-5 pb-5'>
@@ -178,7 +174,7 @@ export const Home = ({review, handleClickReview}) => {
                         <div className='text-center mt-[60px]'>
                             <Link to='/products'>
                                 <a className='px-[36px] py-[12px] border-2 rounded-xl italic border-[graytext] hover:text-white hover:bg-[rgba(255,97,85,1)] transition-colors'
-                                   href="#">Каталог продуктов</a>
+                                   href="src/components/Catalog/Home#">Каталог продуктов</a>
                             </Link>
                         </div>
 
